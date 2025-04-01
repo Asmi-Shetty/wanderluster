@@ -59,7 +59,7 @@ const GalleryPage = () => {
 
   return (
     <>
-      <div className="bg-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587977297023-af9d12db6ac4?auto=format&fit=crop&w=2000&q=80')" }}></div>
+      <div className="bg-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581450840325-acc7129e4171?auto=format&fit=crop&w=2000&q=80')" }}></div>
       <div className="overlay"></div>
       
       <div className="min-h-screen pt-24 pb-12">
