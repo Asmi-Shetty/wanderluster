@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -7,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Airplane, Train, Bus, Search, Calendar, ArrowRight, MapPin } from "lucide-react";
+import { Plane, Train, Bus, Search, Calendar, ArrowRight, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const TransportationPage = () => {
@@ -147,7 +146,7 @@ const TransportationPage = () => {
               <Tabs defaultValue="flights">
                 <TabsList className="mb-6 bg-white/20 dark:bg-gray-800/20">
                   <TabsTrigger value="flights">
-                    <Airplane className="h-4 w-4 mr-2" /> Flights
+                    <Plane className="h-4 w-4 mr-2" /> Flights
                   </TabsTrigger>
                   <TabsTrigger value="trains">
                     <Train className="h-4 w-4 mr-2" /> Trains
@@ -407,7 +406,7 @@ const TransportationPage = () => {
             <Card className="bg-glass">
               <CardHeader>
                 <CardTitle>
-                  <Airplane className="inline mr-2 mb-1" /> Flight Information
+                  <Plane className="inline mr-2 mb-1" /> Flight Information
                 </CardTitle>
               </CardHeader>
               <CardContent>

@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Search, MapPin, Calendar, Airplane, Train, Bus, Hotel, Image, TrendingUp, Wallet } from "lucide-react";
+import { Search, MapPin, Calendar, Plane, Train, Bus, Hotel, Image, TrendingUp, Wallet } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -70,7 +70,7 @@ const HomePage = () => {
               <Card className="bg-glass h-full transition-transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <div className="bg-travel-teal/10 p-4 rounded-full mb-4">
-                    <Airplane className="h-8 w-8 text-travel-teal" />
+                    <Plane className="h-8 w-8 text-travel-teal" />
                   </div>
                   <h3 className="font-bold text-xl mb-2">Transportation</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
