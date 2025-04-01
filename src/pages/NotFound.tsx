@@ -1,5 +1,7 @@
-import { useLocation } from "react-router-dom";
+
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,15 +14,23 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <>
+      <div className="bg-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=2000&q=80')" }}></div>
+      <div className="overlay"></div>
+      
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center max-w-md px-4">
+          <h1 className="text-8xl font-bold text-white mb-6">404</h1>
+          <p className="text-2xl text-white mb-8">Looks like you've taken a wrong turn on your journey</p>
+          <p className="text-lg text-white/80 mb-10">
+            The page you're looking for doesn't exist or has been moved.
+          </p>
+          <Link to="/">
+            <Button size="lg">Return to Homepage</Button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
